@@ -25,7 +25,7 @@ public class Certainty3D {
         int minGreen = Integer.MAX_VALUE;
         int minBlue = Integer.MAX_VALUE;
         
-        try (LASReader reader = new LASReader("C:/Users/Jani Simomaa/git/LASlibJNI/src/test/resources/certainty3d-color-utm-feet-navd88.las")) {
+        try (LASReader reader = new LASReader("src/test/resources/certainty3d-color-utm-feet-navd88.las")) {
             while (reader.readPoint()) {
                 LASPoint point = reader.getPoint();
                 

@@ -17,7 +17,7 @@ public class LASlibJNITest {
     public void readSampleLAS() throws Exception {
         LASlibJNI.initialize();
 
-        try (LASReader reader = new LASReader("C:/1.0_0.las")) {
+        try (LASReader reader = new LASReader("src/test/resources/1.0_0.las")) {
             while (reader.readPoint()) {
                 LASPoint point = reader.getPoint();
 
@@ -35,7 +35,7 @@ public class LASlibJNITest {
 
         LASlibJNI.initialize();
 
-        try (LASReader reader = new LASReader("C:/1.0_0.las")) {
+        try (LASReader reader = new LASReader("src/test/resources/1.0_0.las")) {
             LASHeader header = reader.getHeader();
 
             boolean compressed = header.isCompressed();
