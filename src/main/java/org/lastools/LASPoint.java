@@ -14,11 +14,11 @@ public class LASPoint extends NativeObject {
 
     public native boolean isLastOfMany();
 
-    public native int getX();
+    public native double getX();
 
-    public native int getY();
+    public native double getY();
 
-    public native int getZ();
+    public native double getZ();
 
     public native int getIntensity();
 

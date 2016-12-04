@@ -101,9 +101,9 @@ JNIEXPORT jboolean JNICALL Java_org_lastools_LASPoint_isLastOfMany(JNIEnv *env,
 /*
  * Class:     org_lastools_LASPoint
  * Method:    getX
- * Signature: ()I
+ * Signature: ()D
  */
-JNIEXPORT jint JNICALL Java_org_lastools_LASPoint_getX(JNIEnv *env,
+JNIEXPORT jdouble JNICALL Java_org_lastools_LASPoint_getX(JNIEnv *env,
         jobject lasPoint) {
     PREAMBLE;
     LASpoint* point = LOAD_LASPOINT_POINTER(lasPoint);
@@ -114,9 +114,9 @@ JNIEXPORT jint JNICALL Java_org_lastools_LASPoint_getX(JNIEnv *env,
 /*
  * Class:     org_lastools_LASPoint
  * Method:    getY
- * Signature: ()I
+ * Signature: ()D
  */
-JNIEXPORT jint JNICALL Java_org_lastools_LASPoint_getY(JNIEnv *env,
+JNIEXPORT jdouble JNICALL Java_org_lastools_LASPoint_getY(JNIEnv *env,
         jobject lasPoint) {
     PREAMBLE;
     LASpoint* point = LOAD_LASPOINT_POINTER(lasPoint);
@@ -127,9 +127,9 @@ JNIEXPORT jint JNICALL Java_org_lastools_LASPoint_getY(JNIEnv *env,
 /*
  * Class:     org_lastools_LASPoint
  * Method:    getZ
- * Signature: ()I
+ * Signature: ()D
  */
-JNIEXPORT jint JNICALL Java_org_lastools_LASPoint_getZ(JNIEnv *env,
+JNIEXPORT jdouble JNICALL Java_org_lastools_LASPoint_getZ(JNIEnv *env,
         jobject lasPoint) {
     PREAMBLE;
     LASpoint* point = LOAD_LASPOINT_POINTER(lasPoint);

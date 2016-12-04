@@ -106,7 +106,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>C:\LAStools\LASlib\lib\LASlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>"C:\Users\Jani Simomaa\git\LAStools_VS\bin\x64\Debug\LASlib.lib";%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

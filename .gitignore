@@ -2,3 +2,4 @@
 /.settings
 *.a
 *.o
+hs_err_pid*

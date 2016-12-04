@@ -4,8 +4,19 @@
     <groupId>LASlib4j</groupId>
     <artifactId>LASlibJNI</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>LASlib4j</name>
+    <name>LASlibJNI</name>
+    <description>JNI bindings for LAStools/LASlib C++ API for reading/writing LIDAR data stored in standard LAS or in compressed LAZ format</description>
+    <url>https://github.com/jsimomaa/LASlibJNI</url>
 
+    <issueManagement>
+        <url>https://github.com/jsimomaa/LASlibJNI/issues</url>
+        <system>GitHub Issues</system>
+    </issueManagement>
+
+    <scm>
+        <url>https://github.com/jsimomaa/LASlibJNI</url>
+        <connection>scm:git:git://github.com/jsimomaa/LASlibJNI.git</connection>
+    </scm>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -20,6 +31,40 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.21</version>
+        </dependency>
 
     </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Maven Assembly Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.4.1</version>
+                <configuration>
+                    <!-- get all project dependencies -->
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <!-- bind to the packaging phase -->
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
 </project>

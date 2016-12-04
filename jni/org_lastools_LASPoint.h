@@ -58,25 +58,25 @@ JNIEXPORT jboolean JNICALL Java_org_lastools_LASPoint_isLastOfMany
 /*
  * Class:     org_lastools_LASPoint
  * Method:    getX
- * Signature: ()I
+ * Signature: ()D
  */
-JNIEXPORT jint JNICALL Java_org_lastools_LASPoint_getX
+JNIEXPORT jdouble JNICALL Java_org_lastools_LASPoint_getX
   (JNIEnv *, jobject);
 
 /*
  * Class:     org_lastools_LASPoint
  * Method:    getY
- * Signature: ()I
+ * Signature: ()D
  */
-JNIEXPORT jint JNICALL Java_org_lastools_LASPoint_getY
+JNIEXPORT jdouble JNICALL Java_org_lastools_LASPoint_getY
   (JNIEnv *, jobject);
 
 /*
  * Class:     org_lastools_LASPoint
  * Method:    getZ
- * Signature: ()I
+ * Signature: ()D
  */
-JNIEXPORT jint JNICALL Java_org_lastools_LASPoint_getZ
+JNIEXPORT jdouble JNICALL Java_org_lastools_LASPoint_getZ
   (JNIEnv *, jobject);
 
 /*
