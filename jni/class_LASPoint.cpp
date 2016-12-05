@@ -393,8 +393,8 @@ JNIEXPORT void JNICALL Java_org_lastools_LASPoint_dealloc
 (JNIEnv *env, jobject, jlong ptr) {
     PREAMBLE;
     LASpoint* point = static_cast<LASpoint*>(TO_POINTER(ptr));
-    if (point) {
-        delete point;
-    }
+//    if (point) {
+//        delete point;
+//    }
     TRAILER_VOID;
 }
